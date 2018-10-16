@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Open Source wiki of IIT Bhubaneswar</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 Oct 2018 16:49:50 +0530</pubDate>
+    <lastBuildDate>Tue, 16 Oct 2018 16:49:50 +0530</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>How to participate in Hacktoberfest with BBSWiki</title>
+        <description>&lt;h2 id=&quot;what-is-hacktoberfest&quot;&gt;What is Hacktoberfest?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hacktoberfest.digitalocean.com&quot;&gt;Hacktoberfest&lt;/a&gt; is a month-long celebration of open source software run by DigitalOcean in partnership with GitHub and Twilio.
+To get a shirt, you must make five pull requests (PRs) between October 1–31 in any timezone. PRs can be to any public repo on GitHub, not just the ones highlighted. The PR must contain commits you made yourself.&lt;/p&gt;
+
+&lt;p&gt;If you are a newbie in Open Source Domain and looking for an open source project to make your 5 PRs then bingo! You have arrived at the right place.&lt;/p&gt;
+
+&lt;p&gt;Follow these steps to start contributing to BBSWiki:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fork BBSWiki on your GitHub account.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Clone BBSWiki on your local computer.
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/YOUR_USER_NAME/bbswiki.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Step over into &lt;code class=&quot;highlighter-rouge&quot;&gt;bbswiki&lt;/code&gt; directory
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;bbswiki
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Step over into &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory to create a new post
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;_posts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create a new markdown file to create a new post on &lt;code class=&quot;highlighter-rouge&quot;&gt;BBSWiki&lt;/code&gt;.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;touch 2018-10-16-Hello-World.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Note: The first letters of file name should be the date of post and the last letters should be the title of post as shown in above example.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Copy following template to the newly created file and edit it accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;How&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;participate&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Hacktoberfest&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;BBSWiki&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;YOUR_NAME&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;howtoguides&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;assets/images/image.png&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+
+CONTENT of YOUR POST Written in MARKDOWN Language.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note: If you want to use any cover image[Recommended] in your post, first save it to &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/image&lt;/code&gt; directory and then reference it in post as shown above. Before writing your name in the post, first add it to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add changes to git and commit them
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -am 'Add New Post'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Push your changes to remote
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create a Pull request to BBSWiki repo from your GitHub account.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 16 Oct 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/howtoguides/2018/10/16/How-to-participate-in-Hacktoberfest-with-BBSWiki.html</link>
+        <guid isPermaLink="true">http://localhost:4000/howtoguides/2018/10/16/How-to-participate-in-Hacktoberfest-with-BBSWiki.html</guid>
+        
+        
+        <category>howtoguides</category>
+        
+      </item>
+    
+  </channel>
+</rss>
